@@ -4,7 +4,8 @@ y lo muestro por 'ID' al presionar el botón 'mostrar'
 */
 function mostrar()
 {
-	message = prompt();
-	txtIdNombre.value = message;
+	var vMessage;
+	vMessage = prompt("Valor");
+	txtIdNombre.value = vMessage;
 }
 
