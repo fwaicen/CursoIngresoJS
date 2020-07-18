@@ -12,8 +12,6 @@
 		<!--Lógica-Programación-->
 		<script type="text/javascript" src="jsEntradaSalida-07.js"></script>
         <!--Final de Lógica-Programación -->
-		
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
 	
         <link rel="icon" type="image/x-icon" href="../favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,13 +43,13 @@
 				
 		
 			<br>
-			<a  class="MiBotonUTNnav"  onclick="sumar(num1, num2)" >Sumar ( + )</a>
-			<a  class="MiBotonUTNnav"  onclick="restar(num1, num2)" >Restar ( - )</a>
+			<a class="MiBotonUTNnav"  onclick="sumar()" >Sumar ( + )</a>
+			<a class="MiBotonUTNnav"  onclick="restar()" >Restar ( - )</a>
 			<br><br><br>
 			
-			<a  class="MiBotonUTNnav"  onclick="multiplicar(num1, num2)" >Multiplicar ( * )
+			<a class="MiBotonUTNnav"  onclick="multiplicar()" >Multiplicar ( * )
 			</a>&nbsp&nbsp
-			<a  class="MiBotonUTNnav"  onclick="dividir(num1, num2)" >Dividir ( / )</a>
+			<a class="MiBotonUTNnav"  onclick="dividir()" >Dividir ( / )</a>
 	</form>				
    
   </div>
@@ -76,23 +74,6 @@
   	<!--a class="MiBotonUTNnav" onclick="location.href='../index.html'" ><i class="fas fa-bars"></i>Men&uacute; Principal</a-->	
   	<p>Curso de ingreso UTN FRA</p>
 </div>
-
-<script>
-	var num1 = 0;
-	var num2 = 0;
-
-	$(document).ready(function(){
-    
-		$("#txtIdNumeroUno").on("change",function(){
-			num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
-		})
-
-		$("#txtIdNumeroDos").on("change",function(){
-			num2 = parseInt(document.getElementById("txtIdNumeroDos").value);
-		})
- 
-	})
-</script>
 
 </body>
 </html>
